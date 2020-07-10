@@ -1,56 +1,59 @@
 import React from 'react';
 
-import { 
-    Container,
-    Banner,
-    Avatar,
-    ProfileData,
-    LocationIcon,
-    CakeIcon,
-    Followage,
-    EditButton,
- } from './styles';
+import Feed from '../Feed';
+
+import {
+  Container,
+  Banner,
+  Avatar,
+  ProfileData,
+  LocationIcon,
+  CakeIcon,
+  Followage,
+  EditButton,
+} from './styles';
 
 const ProfilePage: React.FC = () => {
-    return (
-        <Container>
-            <Banner>
-                <Avatar />
-            </Banner>
-            <ProfileData>
+  return (
+    <Container>
+      <Banner>
+        <Avatar />
+      </Banner>
 
-                <EditButton outlined>Editar Perfil</EditButton>
+      <ProfileData>
+        <EditButton outlined>Editar perfil</EditButton>
 
-                <h1>Perfil Teste</h1>
-                <h2>@perfil_teste</h2>
+        <h1>Jonas Adam</h1>
+        <h2>@adam_jonas</h2>
 
-                <p>
-                    Developer at <a href="www.google.com">@Google</a>
-                </p>
-                <ul>
-                    <li>
-                        <LocationIcon />
-                        São Paulo
-                    </li>
-                    <li>
-                        <CakeIcon />
-                        Nascido(a) em 05 de junho de 1989
-                    </li>
-                </ul>
-                <Followage>
-                    <span>
-                        seguindo <strong>999</strong>
-                    </span>
-                    <span>
-                        <strong>999</strong> seguidores
-                    </span>
-                </Followage>
-            </ProfileData>
-        </Container>
+        <p>
+          Time traveler at <a href="https://google.com.br">@Earth_2</a>
+        </p>
 
-    );
-}
+        <ul>
+          <li>
+            <LocationIcon />
+            Winden, Alemanha
+          </li>
+          <li>
+            <CakeIcon />
+            Nascido(a) em 5 de junho de 2002
+          </li>
+        </ul>
+
+        <Followage>
+          <span>
+            seguindo <strong>999</strong>
+          </span>
+          <span>
+            <strong>999 </strong> seguidores
+          </span>
+        </Followage>
+      </ProfileData>
+
+      <Feed />
+    </Container>
+  );
+};
 
 export default ProfilePage;
-//https://www.youtube.com/watch?v=K-8z_4xvT3o
-//parei 1:04:52
